@@ -15,11 +15,9 @@ und kopiere **Client ID** und **Client Secret**.
 
 Dann führe diesen Befehl in der Kommandozeile aus (ersetze die Platzhalter):
 
-```bash
-curl -X POST https://api-m.sandbox.paypal.com/v1/oauth2/token \
-  -u "DEINE_CLIENT_ID:DEIN_CLIENT_SECRET" \
-  -H "Content-Type: application/x-www-form-urlencoded" \
-  -d "grant_type=client_credentials"
+**Windows cmd / PowerShell (alles in einer Zeile):**
+```
+curl -X POST https://api-m.sandbox.paypal.com/v1/oauth2/token -u "DEINE_CLIENT_ID:DEIN_CLIENT_SECRET" -H "Content-Type: application/x-www-form-urlencoded" -d "grant_type=client_credentials"
 ```
 
 Kopiere den `access_token` Wert aus der JSON-Antwort.
